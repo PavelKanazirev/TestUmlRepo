@@ -1,0 +1,30 @@
+	
+@startuml
+(*) --> "Start"
+--> ==PreOverview===
+--> "Overview
+- What does it do (FO mentor)
+- High level architecture (Arch mentor)" as C1
+
+if "Are there other overview questions?" then
+  -->[Yes] ==PreOverview===
+else
+  -->[No] ==PreDetails===
+endif
+
+--> "Practical experience (SW mentor)" as C3
+if "Are there other questions about the details?" then
+  -->[Yes] ==PreDetails===
+else
+  -->[No] ==PrePractical===
+endif
+
+    if "Do you think your knowledge/experience will be useful to others?" then
+      -->[Yes] "Knowledge sharing (review by TL)" as C4
+    else
+      -->[No] ==PrePractical===
+    endif
+  endif
+endif
+
+@enduml
