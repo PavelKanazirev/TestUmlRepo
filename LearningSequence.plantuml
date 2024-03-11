@@ -6,7 +6,7 @@
 - What does it do (FO mentor)
 - High level architecture (Arch mentor)" as C1
 
-if "Are there other overview questions?" then
+if "Are there other overview questions pending?" then
   -->[Yes] ==PreOverview===
 else
   -->[No] ==PreDetails===
